@@ -1,4 +1,5 @@
 using System;
+using System.Diagnostics.CodeAnalysis;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -7,6 +8,7 @@ namespace NCoreUtils.Internal
     /// <summary>
     /// Original source: https://github.com/microsoft/referencesource/blob/master/mscorlib/system/threading/Tasks/TaskToApm.cs
     /// </summary>
+    [ExcludeFromCodeCoverage]
     internal static class TaskToApm
     {
         /// <summary>

@@ -7,10 +7,9 @@ using System.Threading.Tasks;
 
 namespace NCoreUtils
 {
+    #if !NETSTANDARD2_1
     public static class IOBackports
     {
-        #if !NETSTANDARD2_1
-
         /// <summary>
         /// Maximum used chunk size --> to avoid large arrays being created on LOH.
         /// </summary>
@@ -135,7 +134,6 @@ namespace NCoreUtils
                 }
             }
         }
-
-        #endif
     }
+    #endif
 }

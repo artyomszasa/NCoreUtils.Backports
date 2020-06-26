@@ -5,7 +5,7 @@
     <Nullable>enable</Nullable>
     <RootNamespace>NCoreUtils</RootNamespace>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-    <Version>3.1.0-alpha2</Version>
+    <Version>3.1.0</Version>
   </PropertyGroup>
   <!-- mono fix -->
   <PropertyGroup>

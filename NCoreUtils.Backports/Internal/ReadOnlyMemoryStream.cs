@@ -1,4 +1,5 @@
 using System;
+using System.Diagnostics.CodeAnalysis;
 using System.IO;
 using System.Runtime.CompilerServices;
 using System.Threading;
@@ -9,6 +10,7 @@ namespace NCoreUtils.Internal
     /// <summary>
     /// Original source: https://github.com/stephentoub/corefx/blob/5d38ea8d6642e885058180680c9664c3e27ca054/src/Common/src/System/IO/ReadOnlyMemoryStream.cs
     /// </summary>
+    [ExcludeFromCodeCoverage]
     internal sealed class ReadOnlyMemoryStream : Stream
     {
 

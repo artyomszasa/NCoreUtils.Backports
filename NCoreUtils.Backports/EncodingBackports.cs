@@ -4,10 +4,10 @@ using System.Text;
 
 namespace NCoreUtils
 {
+    #if !NETSTANDARD2_1
+
     public static unsafe class EncodingBackports
     {
-        #if !NETSTANDARD2_1
-
         public static int GetChars(this Encoding encoding, ReadOnlySpan<byte> bytes, Span<char> chars)
         {
             fixed (byte* bytesPtr = &MemoryMarshal.GetReference(bytes))
@@ -25,7 +25,6 @@ namespace NCoreUtils
                 return encoding.GetBytes(charsPtr, chars.Length, bytesPtr, bytes.Length);
             }
         }
-
-        #endif
     }
+    #endif
 }
