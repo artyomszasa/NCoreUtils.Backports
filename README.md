@@ -46,7 +46,7 @@ using Convert = NCoreUtils.PolyfillConvert;
 
 When dependency is added conditionally some preprocessing is still needed:
 ```csharp
-#if NETSTADRD2_0
+#if NETSTANDARD2_0
 using Convert = NCoreUtils.PolyfillConvert;
 #else
 using Convert = System.Convert;
