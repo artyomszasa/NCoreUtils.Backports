@@ -6,6 +6,25 @@
     <RootNamespace>NCoreUtils</RootNamespace>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <Version>3.1.0</Version>
+    <!-- NuGet -->
+    <PackageId>NCoreUtils.Backports</PackageId>
+    <Title>$(PackageId)</Title>
+    <Authors>Artyom Antyipin</Authors>
+    <Description>Span/ReadOnlySpan/Memory/ReadOnlyMemory related extensions and polyfills.</Description>
+    <Copyright>Artyom Antyipin</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryUrl>https://github.com/artyomszasa/NCoreUtils.Backports</RepositoryUrl>
+    <PackageReleaseNotes></PackageReleaseNotes>
+    <!-- Assembly Info -->
+    <Product>NCoreUtils</Product>
+    <AssemblyName>$(PackageId)</AssemblyName>
+    <AssemblyTitle>$(AssemblyName)</AssemblyTitle>
+    <!-- Compilation -->
+    <OutputType>Library</OutputType>
+    <DebugType>portable</DebugType>
+    <!-- <GenerateDocumentationFile>true</GenerateDocumentationFile> -->
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <NoWarn>NU5105</NoWarn>
   </PropertyGroup>
   <!-- mono fix -->
   <PropertyGroup>
