@@ -1,4 +1,4 @@
-# NCoreUtils.Backports
+# NCoreUtils.Backports [![Build Status](https://travis-ci.org/artyomszasa/NCoreUtils.Backports.svg?branch=master)](https://travis-ci.org/artyomszasa/NCoreUtils.Backports)
 
 _`Span`/`ReadOnlySpan`/`Memory`/`ReadOnlyMemory` related extensions and polyfills._
 
